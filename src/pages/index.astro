@@ -1,16 +1,129 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Professional Roofing Contractors in Overland Park, Kansas" description="Expert roofing services in Overland Park, KS. Specializing in roof repairs, replacements, storm damage, and insurance claims. Call (913) 268-6052 for free estimates.">
+	<!-- Hero Section -->
+	<section class="hero-gradient text-white py-20">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<h1 class="text-5xl md:text-6xl font-bold mb-6">
+				Professional Roofing in<br />
+				<span class="text-yellow-300">Overland Park, Kansas</span>
+			</h1>
+			<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+				Expert roof repairs, replacements, and storm damage restoration. 
+				Serving Kansas City area since 1992 with quality workmanship and unmatched customer service.
+			</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="tel:913-268-6052" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-semibold transition-colors">
+					📞 Call (913) 268-6052
+				</a>
+				<a href="/contact" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-semibold transition-colors">
+					Free Estimate
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">Our Roofing Services</h2>
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+					Complete roofing solutions for residential and commercial properties in Overland Park and surrounding areas.
+				</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+					<div class="text-4xl mb-4">🔧</div>
+					<h3 class="text-2xl font-bold mb-4">Roof Repairs</h3>
+					<p class="text-gray-600 mb-4">
+						Quick and reliable roof repairs for leaks, missing shingles, and storm damage. 
+						Emergency repairs available 24/7.
+					</p>
+					<a href="/services" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+				</div>
+				<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+					<div class="text-4xl mb-4">🏠</div>
+					<h3 class="text-2xl font-bold mb-4">Roof Replacement</h3>
+					<p class="text-gray-600 mb-4">
+						Complete roof replacements with premium materials and expert installation. 
+						Lifetime warranties available.
+					</p>
+					<a href="/services" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+				</div>
+				<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+					<div class="text-4xl mb-4">⛈️</div>
+					<h3 class="text-2xl font-bold mb-4">Storm Damage</h3>
+					<p class="text-gray-600 mb-4">
+						Comprehensive storm damage assessment and restoration. 
+						We work directly with insurance companies for hassle-free claims.
+					</p>
+					<a href="/services" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us Section -->
+	<section class="py-20">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Overland Park Roofing?</h2>
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+					Over 30 years of experience serving the Kansas City area with integrity and excellence.
+				</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="text-center">
+					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">✓</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">Licensed & Insured</h3>
+					<p class="text-gray-600">Fully licensed, bonded, and insured for your protection and peace of mind.</p>
+				</div>
+				<div class="text-center">
+					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">🏆</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">30+ Years Experience</h3>
+					<p class="text-gray-600">Serving Overland Park and Kansas City area since 1992 with proven expertise.</p>
+				</div>
+				<div class="text-center">
+					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">💯</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">Quality Guarantee</h3>
+					<p class="text-gray-600">Premium materials and expert craftsmanship backed by comprehensive warranties.</p>
+				</div>
+				<div class="text-center">
+					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">🚀</span>
+					</div>
+					<h3 class="text-xl font-bold mb-2">Fast Response</h3>
+					<p class="text-gray-600">Emergency repairs available 24/7. Quick estimates and timely project completion.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="bg-blue-900 text-white py-20">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<h2 class="text-4xl font-bold mb-6">Ready for a Free Roof Estimate?</h2>
+			<p class="text-xl mb-8 max-w-2xl mx-auto">
+				Don't wait until small problems become big expenses. 
+				Contact us today for your free, no-obligation roof inspection and estimate.
+			</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="tel:913-268-6052" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-semibold transition-colors">
+					📞 Call (913) 268-6052
+				</a>
+				<a href="/contact" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-semibold transition-colors">
+					Get Free Estimate
+				</a>
+			</div>
+		</div>
+	</section>
+</Layout>
