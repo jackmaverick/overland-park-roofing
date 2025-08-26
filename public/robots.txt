@@ -1,31 +1,102 @@
+# Robots.txt for Maverick Exteriors Overland Park Roofing
+# Optimized for search engine crawling and SEO performance
+
+# Default crawling rules - Allow all content
 User-agent: *
 Allow: /
-
-# Sitemap location
-Sitemap: https://overland-park-roofing.vercel.app/sitemap.xml
-
-# Crawl-delay to be respectful to search engines
 Crawl-delay: 1
 
-# Allow all major search engines
+# Sitemap locations
+Sitemap: https://overland-park-roofing.vercel.app/sitemap.xml
+
+# Optimize for major search engines with no crawl delays
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 0
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 0
 
-# Block any potential spam or unwanted bots
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Allow social media crawlers for link previews
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Block SEO spy tools and competitors
 User-agent: SemrushBot
 Disallow: /
 
-User-agent: AhrefsBot  
+User-agent: AhrefsBot
 Disallow: /
 
 User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: LinkdexBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+# Block aggressive scrapers
+User-agent: PetalBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Block email harvesters and spam bots
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: ia_archiver
 Disallow: /
