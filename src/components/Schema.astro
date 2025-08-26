@@ -1,0 +1,436 @@
+---
+interface Props {
+  page?: string;
+  service?: string;
+}
+
+const { page = 'homepage', service } = Astro.props;
+
+// Base business information
+const businessData = {
+  "@context": "https://schema.org",
+  "@type": ["RoofingContractor", "HomeAndConstructionBusiness", "LocalBusiness"],
+  "name": "Overland Park Roofing",
+  "alternateName": ["OP Roofing", "Overland Park Roofers"],
+  "description": "Professional roofing contractors serving Overland Park, Kansas City and surrounding areas since 1992. Expert roof repairs, replacements, storm damage restoration, and insurance claims.",
+  "url": "https://overland-park-roofing.vercel.app",
+  "telephone": "+19132686052",
+  "email": "info@overlandparkroofing.com",
+  "foundingDate": "1992",
+  "slogan": "We Actually Answer & Show Up - 2 Hour Response Guarantee",
+  
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Overland Park",
+    "addressLocality": "Overland Park", 
+    "addressRegion": "KS",
+    "postalCode": "66212",
+    "addressCountry": "US"
+  },
+  
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "38.9822",
+    "longitude": "-94.6708"
+  },
+  
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Overland Park",
+      "containedIn": {
+        "@type": "State", 
+        "name": "Kansas"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Kansas City",
+      "containedIn": {
+        "@type": "State",
+        "name": "Missouri"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Leawood",
+      "containedIn": {
+        "@type": "State",
+        "name": "Kansas"
+      }
+    },
+    {
+      "@type": "City", 
+      "name": "Olathe",
+      "containedIn": {
+        "@type": "State",
+        "name": "Kansas"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Shawnee", 
+      "containedIn": {
+        "@type": "State",
+        "name": "Kansas"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Prairie Village",
+      "containedIn": {
+        "@type": "State",
+        "name": "Kansas"
+      }
+    }
+  ],
+  
+  "openingHours": [
+    "Mo-Fr 07:00-19:00",
+    "Sa 08:00-17:00"
+  ],
+  
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+19132686052",
+      "contactType": "customer service",
+      "availableLanguage": "English",
+      "areaServed": ["US-KS", "US-MO"]
+    },
+    {
+      "@type": "ContactPoint", 
+      "telephone": "+19132686052",
+      "contactType": "emergency",
+      "availableLanguage": "English",
+      "hoursAvailable": "24/7"
+    }
+  ],
+  
+  "priceRange": "$$",
+  "paymentAccepted": ["Cash", "Check", "Credit Card", "Insurance Claims", "Financing"],
+  
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://overland-park-roofing.vercel.app/favicon.svg"
+  },
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "156",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Roofing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emergency Roof Repair",
+          "description": "24/7 emergency roof repairs with 2-hour response guarantee",
+          "provider": {
+            "@type": "RoofingContractor",
+            "name": "Overland Park Roofing"
+          },
+          "areaServed": ["Overland Park, KS", "Kansas City, MO", "Leawood, KS"],
+          "availableAtOrFrom": {
+            "@type": "Place",
+            "name": "Overland Park, Kansas"
+          }
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "minPrice": "200",
+          "maxPrice": "2500"
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Roof Replacement",
+          "description": "Complete roof replacement with premium materials and lifetime warranties",
+          "provider": {
+            "@type": "RoofingContractor",
+            "name": "Overland Park Roofing"
+          }
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "minPrice": "8000",
+          "maxPrice": "45000"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Storm Damage Restoration",
+          "description": "Complete storm damage assessment and insurance claim assistance",
+          "provider": {
+            "@type": "RoofingContractor",
+            "name": "Overland Park Roofing"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Insurance Claims Assistance", 
+          "description": "Full insurance claim handling from assessment to completion",
+          "provider": {
+            "@type": "RoofingContractor",
+            "name": "Overland Park Roofing"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Gutter Installation",
+          "description": "Seamless gutter installation and gutter guard systems",
+          "provider": {
+            "@type": "RoofingContractor", 
+            "name": "Overland Park Roofing"
+          }
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "USD",
+          "minPrice": "800",
+          "maxPrice": "3500"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Solar Panel Integration",
+          "description": "Solar-ready roofing systems and solar panel installation coordination",
+          "provider": {
+            "@type": "RoofingContractor",
+            "name": "Overland Park Roofing"
+          }
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Historic Home Roofing",
+          "description": "Specialized roofing for historic homes in Prairie Village and Mission Hills",
+          "provider": {
+            "@type": "RoofingContractor",
+            "name": "Overland Park Roofing"
+          }
+        }
+      }
+    ]
+  },
+  
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Free Roof Inspection",
+      "description": "Comprehensive roof inspection at no cost",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availabilityStarts": "2025-01-01",
+      "availabilityEnds": "2025-12-31"
+    },
+    {
+      "@type": "Offer", 
+      "name": "2-Hour Response Guarantee",
+      "description": "Guaranteed callback within 2 hours or receive service discount",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "description": "$100 discount if we don't meet response time"
+      }
+    }
+  ],
+  
+  "knowsAbout": [
+    "Roof Repair",
+    "Roof Replacement", 
+    "Storm Damage",
+    "Insurance Claims",
+    "Asphalt Shingles",
+    "Metal Roofing",
+    "Tile Roofing",
+    "Gutter Systems",
+    "Solar Integration",
+    "Historic Home Restoration",
+    "Energy Efficiency",
+    "Kansas Weather",
+    "Building Codes"
+  ],
+  
+  "award": [
+    "GAF Master Elite Contractor",
+    "Better Business Bureau A+ Rating",
+    "30+ Years in Business"
+  ],
+  
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional Certification",
+      "name": "GAF Master Elite Contractor"
+    },
+    {
+      "@type": "EducationalOccupationalCredential", 
+      "credentialCategory": "License",
+      "name": "Kansas Roofing Contractor License"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "License", 
+      "name": "Missouri Roofing Contractor License"
+    }
+  ]
+};
+
+// Add specific service schema if on service page
+const getServiceSchema = (serviceName: string) => {
+  const serviceSchemas: Record<string, any> = {
+    "emergency": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Emergency Roof Repair Services",
+      "description": "24/7 emergency roof repairs with same-day response in Overland Park, Kansas",
+      "provider": businessData,
+      "areaServed": businessData.areaServed,
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Emergency Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Leak Repair",
+              "description": "Immediate leak repair to prevent water damage"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Storm Damage Emergency Response",
+              "description": "Emergency tarping and temporary repairs after storms"
+            }
+          }
+        ]
+      },
+      "serviceType": "Emergency Service",
+      "hoursAvailable": "24/7"
+    },
+    "insurance": {
+      "@context": "https://schema.org",
+      "@type": "Service", 
+      "name": "Insurance Claim Roofing Services",
+      "description": "Complete insurance claim handling for storm damaged roofs in Kansas City area",
+      "provider": businessData,
+      "serviceType": "Insurance Claims Assistance"
+    },
+    "pricing": {
+      "@context": "https://schema.org", 
+      "@type": "Service",
+      "name": "Transparent Roofing Pricing",
+      "description": "Upfront roofing costs with no hidden fees in Overland Park, Kansas",
+      "provider": businessData
+    }
+  };
+  
+  return serviceSchemas[serviceName] || null;
+};
+
+const schemas = [businessData];
+
+// Add service-specific schema if applicable
+if (service) {
+  const serviceSchema = getServiceSchema(service);
+  if (serviceSchema) {
+    schemas.push(serviceSchema);
+  }
+}
+
+// Add breadcrumb schema for non-homepage pages
+if (page !== 'homepage') {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home", 
+        "item": "https://overland-park-roofing.vercel.app"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": page.charAt(0).toUpperCase() + page.slice(1),
+        "item": `https://overland-park-roofing.vercel.app/${page}`
+      }
+    ]
+  };
+  schemas.push(breadcrumbSchema);
+}
+
+// Add FAQ schema for relevant pages
+if (page === 'insurance-claims' || page === 'pricing') {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you work with insurance companies?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Yes, we handle the entire insurance claim process from initial assessment to final completion. We're present during adjuster visits and help maximize your settlement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you respond to emergencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We guarantee same-day emergency response for calls received before 10 AM. Our 24/7 hotline is (913) 268-6052."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve Overland Park, Kansas City, Leawood, Olathe, Shawnee, Prairie Village, and surrounding Kansas City metropolitan areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer free estimates?", 
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide free, comprehensive roof inspections and estimates. We also offer transparent pricing with our online calculator."
+        }
+      }
+    ]
+  };
+  schemas.push(faqSchema);
+}
+---
+
+{schemas.map(schema => (
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+))}
