@@ -6,20 +6,80 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Hero Section -->
 	<section class="hero-gradient text-white py-20">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<div class="bg-red-600 inline-block px-6 py-2 rounded-full mb-4">
+				<span class="text-white font-bold">⚡ 2-HOUR RESPONSE GUARANTEE</span>
+			</div>
 			<h1 class="text-5xl md:text-6xl font-bold mb-6">
-				Professional Roofing in<br />
-				<span class="text-yellow-300">Overland Park, Kansas</span>
+				Tired of Unresponsive Roofers?<br />
+				<span class="text-yellow-300">We Actually Answer & Show Up</span>
 			</h1>
-			<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-				Expert roof repairs, replacements, and storm damage restoration. 
-				Serving Kansas City area since 1992 with quality workmanship and unmatched customer service.
+			<p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+				While competitors leave you waiting days for callbacks, we respond in 2 hours. 
+				<strong>30+ years serving Overland Park</strong> - we never abandon projects or hide our prices.
 			</p>
+			
+			<!-- Guarantee Badges -->
+			<div class="flex flex-wrap justify-center gap-4 mb-8 text-sm">
+				<div class="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+					<span class="font-semibold">✓ Same-Day Emergency Service</span>
+				</div>
+				<div class="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+					<span class="font-semibold">✓ No Hidden Fees Ever</span>
+				</div>
+				<div class="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+					<span class="font-semibold">✓ Owner Direct Access</span>
+				</div>
+				<div class="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+					<span class="font-semibold">✓ Insurance Claim Experts</span>
+				</div>
+			</div>
+
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<a href="tel:913-268-6052" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-semibold transition-colors">
-					📞 Call (913) 268-6052
+				<a href="tel:913-268-6052" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-semibold transition-colors shadow-lg">
+					📞 Owner Direct: (913) 268-6052
 				</a>
-				<a href="/contact" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-semibold transition-colors">
-					Free Estimate
+				<a href="/pricing" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-semibold transition-colors shadow-lg">
+					See Transparent Pricing
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Competitive Advantages Section -->
+	<section class="py-16 bg-white">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">Why Customers Leave Other Roofers for Us</h2>
+				<p class="text-xl text-gray-600">Don't get stuck with unresponsive contractors who abandon projects</p>
+			</div>
+			
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+				<div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+					<h3 class="text-lg font-bold text-red-700 mb-3">❌ What Competitors Do</h3>
+					<ul class="space-y-2 text-red-600">
+						<li>• Days to return calls</li>
+						<li>• Leave projects unfinished</li>
+						<li>• Hide pricing until the end</li>
+						<li>• Poor communication</li>
+						<li>• No owner involvement</li>
+					</ul>
+				</div>
+				
+				<div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+					<h3 class="text-lg font-bold text-green-700 mb-3">✅ What We Do</h3>
+					<ul class="space-y-2 text-green-600">
+						<li>• 2-hour response guarantee</li>
+						<li>• Never abandon projects</li>
+						<li>• Transparent pricing upfront</li>
+						<li>• Daily progress updates</li>
+						<li>• Owner directly involved</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="text-center mt-8">
+				<a href="/why-different" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+					See Full Comparison →
 				</a>
 			</div>
 		</div>
@@ -36,31 +96,40 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 				<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-					<div class="text-4xl mb-4">🔧</div>
-					<h3 class="text-2xl font-bold mb-4">Roof Repairs</h3>
+					<div class="text-4xl mb-4">⚡</div>
+					<h3 class="text-2xl font-bold mb-4">Emergency Repairs</h3>
 					<p class="text-gray-600 mb-4">
-						Quick and reliable roof repairs for leaks, missing shingles, and storm damage. 
-						Emergency repairs available 24/7.
+						Same-day emergency service when storms hit. We actually answer our phones 24/7
+						and show up when we say we will.
 					</p>
-					<a href="/services" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+					<div class="bg-red-100 p-2 rounded text-sm text-red-700 font-semibold mb-4">
+						2-Hour Response Guarantee
+					</div>
+					<a href="/emergency" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
 				</div>
 				<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-					<div class="text-4xl mb-4">🏠</div>
-					<h3 class="text-2xl font-bold mb-4">Roof Replacement</h3>
+					<div class="text-4xl mb-4">🛡️</div>
+					<h3 class="text-2xl font-bold mb-4">Insurance Claims</h3>
 					<p class="text-gray-600 mb-4">
-						Complete roof replacements with premium materials and expert installation. 
-						Lifetime warranties available.
+						We handle your entire insurance claim process. Present during adjuster visits,
+						maximize settlements, stress-free experience.
 					</p>
-					<a href="/services" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+					<div class="bg-green-100 p-2 rounded text-sm text-green-700 font-semibold mb-4">
+						We Handle Everything
+					</div>
+					<a href="/insurance-claims" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
 				</div>
 				<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-					<div class="text-4xl mb-4">⛈️</div>
-					<h3 class="text-2xl font-bold mb-4">Storm Damage</h3>
+					<div class="text-4xl mb-4">☀️</div>
+					<h3 class="text-2xl font-bold mb-4">Solar Integration</h3>
 					<p class="text-gray-600 mb-4">
-						Comprehensive storm damage assessment and restoration. 
-						We work directly with insurance companies for hassle-free claims.
+						Solar-ready roofing systems and solar panel integration. 
+						Services others don't offer in Overland Park.
 					</p>
-					<a href="/services" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+					<div class="bg-yellow-100 p-2 rounded text-sm text-yellow-700 font-semibold mb-4">
+						Competitors Don't Offer
+					</div>
+					<a href="/services-others-dont-offer" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
 				</div>
 			</div>
 		</div>
@@ -70,39 +139,46 @@ import Layout from '../layouts/Layout.astro';
 	<section class="py-20">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center mb-16">
-				<h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Overland Park Roofing?</h2>
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">Our 5-Star Guarantee</h2>
 				<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-					Over 30 years of experience serving the Kansas City area with integrity and excellence.
+					Everything competitors fail at - we guarantee. 30+ years of keeping our promises.
 				</p>
 			</div>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
 				<div class="text-center">
-					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">✓</span>
+					<div class="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">⚡</span>
 					</div>
-					<h3 class="text-xl font-bold mb-2">Licensed & Insured</h3>
-					<p class="text-gray-600">Fully licensed, bonded, and insured for your protection and peace of mind.</p>
+					<h3 class="text-lg font-bold mb-2">2-Hour Response</h3>
+					<p class="text-gray-600 text-sm">Call by 10 AM, we're there same day. Never wait days for callbacks.</p>
+				</div>
+				<div class="text-center">
+					<div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">💬</span>
+					</div>
+					<h3 class="text-lg font-bold mb-2">Daily Updates</h3>
+					<p class="text-gray-600 text-sm">Photo updates every day. Always know what's happening with your project.</p>
 				</div>
 				<div class="text-center">
 					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">🏆</span>
+						<span class="text-3xl">💰</span>
 					</div>
-					<h3 class="text-xl font-bold mb-2">30+ Years Experience</h3>
-					<p class="text-gray-600">Serving Overland Park and Kansas City area since 1992 with proven expertise.</p>
+					<h3 class="text-lg font-bold mb-2">No Hidden Fees</h3>
+					<p class="text-gray-600 text-sm">Transparent pricing upfront. See our calculator - no surprises ever.</p>
 				</div>
 				<div class="text-center">
-					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">💯</span>
+					<div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">✅</span>
 					</div>
-					<h3 class="text-xl font-bold mb-2">Quality Guarantee</h3>
-					<p class="text-gray-600">Premium materials and expert craftsmanship backed by comprehensive warranties.</p>
+					<h3 class="text-lg font-bold mb-2">Project Completion</h3>
+					<p class="text-gray-600 text-sm">Never abandon jobs. 100% completion guarantee with penalties.</p>
 				</div>
 				<div class="text-center">
-					<div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">🚀</span>
+					<div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">👤</span>
 					</div>
-					<h3 class="text-xl font-bold mb-2">Fast Response</h3>
-					<p class="text-gray-600">Emergency repairs available 24/7. Quick estimates and timely project completion.</p>
+					<h3 class="text-lg font-bold mb-2">Owner Involved</h3>
+					<p class="text-gray-600 text-sm">Direct access to owner. Call (913) 268-6052 - he actually answers.</p>
 				</div>
 			</div>
 		</div>
