@@ -10,6 +10,11 @@ export interface Props {
 }
 
 const { title, description = "Professional roofing services in Overland Park, Kansas. Expert roof repairs, replacements, and storm damage restoration.", page, service } = Astro.props;
+
+// Generate canonical URL based on current page
+const baseUrl = "https://overland-park-roofing.vercel.app";
+const currentPath = Astro.url.pathname;
+const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 ---
 
 <!DOCTYPE html>
@@ -20,10 +25,15 @@ const { title, description = "Professional roofing services in Overland Park, Ka
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		
+		<!-- Canonical URL for SEO -->
+		<link rel="canonical" href={canonicalUrl} />
+		
 		<title>{title}</title>
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalUrl} />
 		
 		<!-- Schema.org Structured Data -->
 		<Schema page={page} service={service} />
