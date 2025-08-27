@@ -4,81 +4,57 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Maverick Exteriors - 2-Hour Response Roofing Contractor | Overland Park, KS" description="Tired of unresponsive roofers? Maverick Exteriors guarantees 2-hour response, transparent pricing, and never abandons projects. 30+ years serving Overland Park. Emergency repairs, insurance claims, roof replacement. Call (913) 268-6052." page="homepage">
 	<!-- Hero Section -->
-	<section class="relative bg-cover bg-center pt-10 pb-20" style="background-image: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);">
-		<div class="absolute inset-0 bg-gray-900/90"></div>
-		
-		<div class="relative max-w-screen-xl mx-auto px-8">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-				<!-- Left Column - Content -->
-				<div class="flex items-center">
-					<div>
-						<!-- Trust Indicators -->
-						<div class="flex items-center justify-between gap-10 mb-5">
-							<div class="flex items-center gap-1">
-								<div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-									<span class="text-2xl">⭐</span>
-								</div>
-								<p class="text-white text-xs md:text-sm leading-tight max-w-[100px] md:max-w-[130px]">
-									<span class="font-bold">4.9—STAR</span><br />
-									RATED BY 400+<br />
-									CUSTOMERS
-								</p>
-								<div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
-									<span class="text-2xl">⭐</span>
-								</div>
-							</div>
-							
-							<div class="flex items-center gap-3">
-								<div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-									<span class="text-white text-xl">🛡️</span>
-								</div>
-								<p class="text-white text-xs md:text-sm leading-tight">
-									<span class="font-bold">30-YEAR</span><br />
-									WORKMANSHIP<br />
-									WARRANTIES
-								</p>
-							</div>
+	<section class="relative bg-gray-900 text-white py-20">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+				<!-- Left Column - Content (keeping your original Maverick content) -->
+				<div>
+					<div class="bg-red-600 inline-block px-6 py-2 rounded-full mb-4">
+						<span class="text-white font-bold">⚡ 2-HOUR RESPONSE GUARANTEE</span>
+					</div>
+					<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+						Tired of Unresponsive Roofers?<br />
+						<span class="text-yellow-300">We Actually Answer & Show Up</span>
+					</h1>
+					<p class="text-gray-300 text-lg md:text-xl mb-8">
+						While competitors leave you waiting days for callbacks, we respond in 2 hours. 
+						<strong>Maverick Exteriors - 30+ years serving Kansas City</strong> - we never abandon projects or hide our prices.
+					</p>
+					
+					<!-- Guarantee Badges -->
+					<div class="flex flex-wrap gap-4 mb-8 text-sm">
+						<div class="bg-white bg-opacity-90 px-4 py-2 rounded-lg">
+							<span class="font-semibold text-gray-900">✓ Same-Day Emergency Service</span>
 						</div>
-						
-						<!-- Main Heading -->
-						<h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-							#1 Top-Rated Roofing Company<br />
-							in <span class="text-yellow-300">Kansas</span>
-						</h1>
-						
-						<!-- Description -->
-						<p class="text-gray-300 text-lg mb-8">
-							With over 30 years in the roofing industry, our team is ready to
-							answer your questions and address your concerns.{' '}
-							<span class="font-bold">We know you will be thrilled with the finished product.</span>
-						</p>
-						
-						<!-- Service Tags -->
-						<div class="flex flex-col md:flex-row gap-4">
-							<div class="flex items-center gap-3 bg-gray-900/90 text-white text-sm px-4 py-3 rounded-full">
-								<span class="text-green-400">✓</span>
-								Emergency Repair
-							</div>
-							<div class="flex items-center gap-3 bg-gray-900/90 text-white text-sm px-4 py-3 rounded-full">
-								<span class="text-green-400">✓</span>
-								Roof Replacement
-							</div>
-							<div class="flex items-center gap-3 bg-gray-900/90 text-white text-sm px-4 py-3 rounded-full">
-								<span class="text-green-400">✓</span>
-								Storm Damage
-							</div>
+						<div class="bg-white bg-opacity-90 px-4 py-2 rounded-lg">
+							<span class="font-semibold text-gray-900">✓ No Hidden Fees Ever</span>
 						</div>
+						<div class="bg-white bg-opacity-90 px-4 py-2 rounded-lg">
+							<span class="font-semibold text-gray-900">✓ Owner Direct Access</span>
+						</div>
+						<div class="bg-white bg-opacity-90 px-4 py-2 rounded-lg">
+							<span class="font-semibold text-gray-900">✓ Insurance Claim Experts</span>
+						</div>
+					</div>
+
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a href="tel:913-268-6052" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-xl font-semibold transition-colors shadow-lg">
+							📞 Owner Direct: (913) 268-6052
+						</a>
+						<a href="/pricing" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg text-xl font-semibold transition-colors shadow-lg">
+							See Transparent Pricing
+						</a>
 					</div>
 				</div>
 				
-				<!-- Right Column - Form -->
-				<div class="mt-16 md:mt-0">
-					<div class="bg-gray-900/60 border border-gray-600 rounded-xl p-6 md:p-10 max-w-md md:max-w-full mx-auto">
+				<!-- Right Column - Form (styled like Neal's form) -->
+				<div class="lg:ml-8">
+					<div class="bg-white p-8 rounded-2xl shadow-2xl max-w-md mx-auto lg:max-w-none">
 						<div class="text-center mb-6">
-							<p class="text-white text-lg mb-1">
-								Schedule your <span class="font-bold underline">FREE</span>
+							<p class="text-gray-900 text-lg mb-1">
+								Schedule your <span class="font-bold underline text-blue-600">FREE</span>
 							</p>
-							<p class="text-white text-xl font-bold">
+							<p class="text-gray-900 text-xl font-bold">
 								Roof Inspection/Estimate Today!
 							</p>
 						</div>
@@ -87,7 +63,7 @@ import Layout from '../layouts/Layout.astro';
 							<!-- Service Selection -->
 							<select 
 								name="service" 
-								class="w-full p-3 bg-violet-100 border border-gray-300 rounded-md text-base"
+								class="w-full p-4 border border-gray-300 rounded-lg text-base bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 							>
 								<option value="">Choose Service*</option>
 								<option value="Emergency Repair">Emergency Repair</option>
@@ -103,57 +79,56 @@ import Layout from '../layouts/Layout.astro';
 								name="address"
 								placeholder="Enter Full Address*"
 								required
-								class="w-full p-3 bg-violet-100 border border-gray-300 rounded-md text-base"
+								class="w-full p-4 border border-gray-300 rounded-lg text-base bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 							/>
 							<input 
 								type="text"
 								name="name"
 								placeholder="Name*"
 								required
-								class="w-full p-3 bg-violet-100 border border-gray-300 rounded-md text-base"
+								class="w-full p-4 border border-gray-300 rounded-lg text-base bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 							/>
 							<input 
 								type="email"
 								name="email"
 								placeholder="Email"
-								class="w-full p-3 bg-violet-100 border border-gray-300 rounded-md text-base"
+								class="w-full p-4 border border-gray-300 rounded-lg text-base bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 							/>
 							<input 
 								type="tel"
 								name="phone"
 								placeholder="Phone Number*"
 								required
-								class="w-full p-3 bg-violet-100 border border-gray-300 rounded-md text-base"
+								class="w-full p-4 border border-gray-300 rounded-lg text-base bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 							/>
 							
 							<!-- Consent Checkbox -->
-							<label class="flex gap-2 text-gray-500 text-xs leading-tight">
+							<label class="flex gap-2 text-gray-600 text-sm">
 								<input 
 									type="checkbox" 
 									name="consent" 
-									class="mt-1 w-4 h-4 text-blue-600 border border-gray-500 rounded"
+									class="mt-1 w-4 h-4 text-blue-600 border border-gray-400 rounded focus:ring-blue-500"
 								/>
 								<span>
 									I agree to receive messages from Maverick Exteriors
-									regarding my inquiry/service request. Message frequency varies.
-									You can opt out by replying STOP to (913) 268-6052.
+									regarding my inquiry/service request. You can opt out by replying STOP to (913) 268-6052.
 								</span>
 							</label>
 							
 							<!-- Submit Button -->
 							<button 
 								type="submit" 
-								class="w-full bg-blue-500 text-white font-medium px-4 py-3 rounded-md hover:bg-blue-600 transition-colors"
+								class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-4 rounded-lg transition-colors text-lg shadow-lg"
 							>
-								Schedule FREE Estimate
+								Get My Free Estimate →
 							</button>
 						</form>
 						
 						<!-- Reviews Badge -->
-						<div class="mt-5 text-center">
+						<div class="mt-6 text-center">
 							<div class="flex justify-center items-center gap-2">
-								<span class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
-								<span class="text-white text-sm">4.9/5 from 400+ reviews</span>
+								<span class="text-yellow-500 text-lg">★★★★★</span>
+								<span class="text-gray-600 text-sm">4.9/5 from 400+ reviews</span>
 							</div>
 						</div>
 					</div>
