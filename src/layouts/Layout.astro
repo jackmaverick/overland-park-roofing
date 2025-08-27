@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Schema from '../components/Schema.astro';
+import TrustBadges from '../components/TrustBadges.astro';
 
 export interface Props {
 	title: string;
@@ -96,6 +97,9 @@ const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 		<main>
 			<slot />
 		</main>
+
+		<!-- Trust Badges Section -->
+		<TrustBadges />
 
 		<footer class="bg-gray-800 text-white">
 			<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
