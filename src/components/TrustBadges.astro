@@ -2,55 +2,116 @@
 // Trust Badges Component - Displays credibility elements on every page
 ---
 
-<section class="py-8 bg-blue-50 border-t border-blue-100">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="text-center mb-6">
-			<h3 class="text-xl font-bold text-blue-900 mb-2">Licensed • Insured • Trusted Since 1992</h3>
-			<p class="text-sm text-blue-700">Your peace of mind is our top priority</p>
-		</div>
-		
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-			<!-- License & Insurance -->
-			<div class="bg-white p-4 rounded-lg shadow-sm border border-blue-200 text-center">
-				<div class="text-2xl mb-2">🛡️</div>
-				<h4 class="font-semibold text-gray-900 text-sm mb-1">Licensed & Insured</h4>
-				<p class="text-xs text-gray-600">Kansas & Missouri<br />Contractor Licenses<br />Fully Bonded</p>
-			</div>
-			
-			<!-- Years in Business -->
-			<div class="bg-white p-4 rounded-lg shadow-sm border border-blue-200 text-center">
-				<div class="text-2xl mb-2">📅</div>
-				<h4 class="font-semibold text-gray-900 text-sm mb-1">30+ Years Experience</h4>
-				<p class="text-xs text-gray-600">Serving Kansas City<br />Since 1992<br />Family Owned & Operated</p>
-			</div>
-			
-			<!-- Certifications -->
-			<div class="bg-white p-4 rounded-lg shadow-sm border border-blue-200 text-center">
-				<div class="text-2xl mb-2">🏆</div>
-				<h4 class="font-semibold text-gray-900 text-sm mb-1">Elite Certifications</h4>
-				<p class="text-xs text-gray-600">GAF Master Elite<br />BBB Accredited<br />Industry Certified</p>
-			</div>
-			
-			<!-- Guarantees -->
-			<div class="bg-white p-4 rounded-lg shadow-sm border border-blue-200 text-center">
-				<div class="text-2xl mb-2">⚡</div>
-				<h4 class="font-semibold text-gray-900 text-sm mb-1">Service Guarantees</h4>
-				<p class="text-xs text-gray-600">2-Hour Response<br />100% Project Completion<br />Lifetime Warranties</p>
-			</div>
-		</div>
-		
-		<!-- Emergency Service Banner -->
-		<div class="mt-6 bg-red-600 text-white p-4 rounded-lg text-center">
-			<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-				<div class="flex items-center">
-					<span class="text-2xl mr-2">🚨</span>
-					<span class="font-semibold">24/7 Emergency Service Available</span>
+<section class="bg-gray-100 py-16 overflow-hidden">
+	<div class="max-w-screen-xl mx-auto px-6 md:px-8">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+			<!-- Content Column -->
+			<div class="relative z-10">
+				<div class="text-gray-900 max-w-none">
+					<p class="text-lg font-semibold text-blue-500 leading-7">About</p>
+					<h2 class="text-3xl md:text-4xl font-bold tracking-tight leading-8 md:leading-10 mt-4">
+						Maverick Exteriors
+					</h2>
+					
+					<div class="space-y-4 mt-4">
+						<p>
+							As a family-owned roofing contractor established in 1992, we have always
+							dreamed of creating a business that not only excels in its field
+							but also truly makes a difference in the lives of our customers.
+							Today, Maverick Exteriors is serving hundreds of customers per year
+							in the communities we call home.
+						</p>
+						
+						<p>
+							Our humble beginnings started with a shared vision, rooted in
+							integrity, hard work, and commitment. We've always
+							believed that the strength of our company lies in the
+							relationships we've built, and that is why we have carefully
+							handpicked our team of skilled professionals.
+						</p>
+						
+						<p>
+							We recognize that your home is more than just a building; it's a
+							sanctuary, a place where memories are made and cherished. With
+							this in mind, we consider it an honor to be entrusted with your
+							roofing needs. Our commitment to you goes
+							beyond the completion of a project; we aim to create lasting
+							relationships and to be your go-to roofing partner for years to
+							come.
+						</p>
+						
+						<p>
+							Thank you for considering Maverick Exteriors. We
+							can't wait to welcome you to our ever-growing family.
+						</p>
+					</div>
 				</div>
-				<div class="flex items-center">
-					<span class="text-2xl mr-2">📞</span>
-					<a href="tel:913-268-6052" class="font-bold text-lg hover:text-yellow-300 transition-colors">
-						(913) 268-6052
-					</a>
+			</div>
+			
+			<!-- Badges Column -->
+			<div class="flex items-center justify-center h-auto md:h-[500px] rounded">
+				<div class="grid grid-cols-1 gap-6 w-full max-w-md">
+					<div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200">
+						<div class="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
+							<span class="text-2xl">📜</span>
+						</div>
+						<h3 class="font-bold text-gray-900 mb-2">Licensed & Insured</h3>
+						<p class="text-sm text-gray-600">Kansas Contractor License<br />Fully insured for your protection</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200">
+						<div class="w-12 h-12 mx-auto mb-3 bg-green-100 rounded-full flex items-center justify-center">
+							<span class="text-2xl">🏆</span>
+						</div>
+						<h3 class="font-bold text-gray-900 mb-2">GAF Master Elite</h3>
+						<p class="text-sm text-gray-600">Top 3% of roofing contractors<br />Extended warranties available</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-lg shadow-lg text-center border border-gray-200">
+						<div class="w-12 h-12 mx-auto mb-3 bg-yellow-100 rounded-full flex items-center justify-center">
+							<span class="text-2xl">🛡️</span>
+						</div>
+						<h3 class="font-bold text-gray-900 mb-2">30-Year Warranties</h3>
+						<p class="text-sm text-gray-600">We stand behind our work<br />Comprehensive protection</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- CTA Section -->
+		<div class="flex flex-col items-center justify-center gap-5 mt-8">
+			<a 
+				href="#contact" 
+				class="inline-flex items-center gap-2 bg-blue-500 text-white text-lg font-semibold px-12 py-4 rounded-md hover:bg-blue-600 transition-colors mt-20"
+			>
+				Get My Free Estimate
+				<span class="text-xl">→</span>
+			</a>
+			
+			<div class="flex gap-5">
+				<div class="flex items-center gap-2 mb-5">
+					<div class="w-7 h-7 bg-yellow-400 rounded-full flex items-center justify-center">
+						<span class="text-sm">⭐</span>
+					</div>
+					<p class="text-gray-800 text-xs leading-tight">
+						<span class="font-bold">4.9—STAR</span><br />
+						RATED BY<br />
+						400+ CUSTOMERS
+					</p>
+					<div class="w-7 h-7 bg-yellow-400 rounded-full flex items-center justify-center">
+						<span class="text-sm">⭐</span>
+					</div>
+				</div>
+				
+				<div class="flex items-center gap-2">
+					<div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+						<span class="text-white text-xs">🛡️</span>
+					</div>
+					<p class="text-gray-800 text-xs leading-tight">
+						<span class="font-bold">30-YEAR</span><br />
+						WORKMANSHIP<br />
+						WARRANTIES
+					</p>
 				</div>
 			</div>
 		</div>

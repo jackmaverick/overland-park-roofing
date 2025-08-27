@@ -1,0 +1,77 @@
+---
+// Live Chat Widget Placeholder - Ready for integration with chat service
+---
+
+<!-- Live Chat Widget Placeholder -->
+<div id="live-chat-widget" class="fixed bottom-6 left-6 z-40">
+	<!-- This will be replaced with actual chat widget code -->
+	<div class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg cursor-pointer transition-all duration-200 hover:shadow-xl" 
+		onclick="openLiveChat()">
+		<div class="flex items-center gap-2">
+			<span class="text-xl">💬</span>
+			<span class="hidden sm:inline text-sm font-semibold">Live Chat</span>
+			<!-- Online indicator -->
+			<div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	// Placeholder function for live chat integration
+	function openLiveChat() {
+		// This would integrate with your chosen live chat service:
+		// - Intercom: Intercom('show')
+		// - Zendesk: zE('webWidget', 'open')
+		// - Drift: drift.api.openChat()
+		// - Tawk.to: Tawk_API.maximize()
+		// - Custom solution
+		
+		// For now, scroll to contact form as fallback
+		const contactForm = document.getElementById('contact-form');
+		if (contactForm) {
+			contactForm.scrollIntoView({ behavior: 'smooth' });
+		} else {
+			// Fallback to phone call
+			window.location.href = 'tel:913-268-6052';
+		}
+	}
+</script>
+
+<!-- 
+INTEGRATION INSTRUCTIONS:
+
+1. Choose your live chat service:
+   - Intercom: Add Intercom script and replace openLiveChat() with Intercom('show')
+   - Zendesk Chat: Add Zendesk script and replace with zE('webWidget', 'open')
+   - Drift: Add Drift script and replace with drift.api.openChat()
+   - Tawk.to: Add Tawk.to script and replace with Tawk_API.maximize()
+
+2. Example integration for popular services:
+
+INTERCOM:
+<script>
+  window.Intercom('boot', { app_id: 'YOUR_APP_ID' });
+</script>
+
+ZENDESK:
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=YOUR_KEY"></script>
+
+DRIFT:
+<script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.driftt=e,t=t.getElementsByTagName("head")[0],o=t.createElement("script"),o.type="text/javascript",o.async=!0,o.src="https://js.driftt.com/include/"+p+"/"+r+".js",n=t.getElementsByTagName("script")[0],n.parentNode.insertBefore(o,n),e.__SV=!0)}(document,window.driftt||[]);
+  driftt.init("YOUR_DRIFT_ID");
+</script>
+
+TAWK.TO:
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/YOUR_SITE_ID/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+-->
